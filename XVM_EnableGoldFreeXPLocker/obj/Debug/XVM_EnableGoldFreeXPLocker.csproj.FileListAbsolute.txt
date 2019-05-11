@@ -1,0 +1,10 @@
+C:\Users\undex\Documents\GitHub\XVM_EnableGoldFreeXPLocker\XVM_EnableGoldFreeXPLocker\bin\Debug\XVM_EnableGoldFreeXPLocker.exe.config
+C:\Users\undex\Documents\GitHub\XVM_EnableGoldFreeXPLocker\XVM_EnableGoldFreeXPLocker\bin\Debug\XVM_EnableGoldFreeXPLocker.exe
+C:\Users\undex\Documents\GitHub\XVM_EnableGoldFreeXPLocker\XVM_EnableGoldFreeXPLocker\bin\Debug\XVM_EnableGoldFreeXPLocker.pdb
+C:\Users\undex\Documents\GitHub\XVM_EnableGoldFreeXPLocker\XVM_EnableGoldFreeXPLocker\obj\Debug\XVM_EnableGoldFreeXPLocker.csprojAssemblyReference.cache
+C:\Users\undex\Documents\GitHub\XVM_EnableGoldFreeXPLocker\XVM_EnableGoldFreeXPLocker\obj\Debug\XVM_EnableGoldFreeXPLocker.main.resources
+C:\Users\undex\Documents\GitHub\XVM_EnableGoldFreeXPLocker\XVM_EnableGoldFreeXPLocker\obj\Debug\XVM_EnableGoldFreeXPLocker.Properties.Resources.resources
+C:\Users\undex\Documents\GitHub\XVM_EnableGoldFreeXPLocker\XVM_EnableGoldFreeXPLocker\obj\Debug\XVM_EnableGoldFreeXPLocker.csproj.GenerateResource.cache
+C:\Users\undex\Documents\GitHub\XVM_EnableGoldFreeXPLocker\XVM_EnableGoldFreeXPLocker\obj\Debug\XVM_EnableGoldFreeXPLocker.csproj.CoreCompileInputs.cache
+C:\Users\undex\Documents\GitHub\XVM_EnableGoldFreeXPLocker\XVM_EnableGoldFreeXPLocker\obj\Debug\XVM_EnableGoldFreeXPLocker.exe
+C:\Users\undex\Documents\GitHub\XVM_EnableGoldFreeXPLocker\XVM_EnableGoldFreeXPLocker\obj\Debug\XVM_EnableGoldFreeXPLocker.pdb
