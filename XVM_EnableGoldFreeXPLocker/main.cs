@@ -105,6 +105,37 @@ namespace XVM_EnableGoldFreeXPLocker
                     labelStatusGold.Text = "Выключен";
                 }
 
+                var icons_dir = @"res_mods\mods\shared_resources\xvm\res\locker";
+                icons_dir = Path.Combine(path, icons_dir);
+                bool error = false;
+                if (Directory.Exists(icons_dir))
+                {
+                    if (!File.Exists(Path.Combine(icons_dir, "locked.png"))) error = true;
+                    if (!File.Exists(Path.Combine(icons_dir, "unlocked.png"))) error = true;
+                    if (error)
+                    {
+                        var response = MessageBox.Show("Файлы иконок замочков не обнаруженны. Без них не будет иконки замочка в ангаре (она будет невидима).\r\nДобавить их?",
+                            "Файлы иконок не найдены",MessageBoxButtons.OKCancel,MessageBoxIcon.Question);
+                        if (response == DialogResult.OK)
+                        {
+                            ImageConverter converter = new ImageConverter();
+                            File.WriteAllBytes(Path.Combine(icons_dir, "locked.png"), (byte[])converter.ConvertTo(Properties.Resources.locked, typeof(byte[])));
+                            File.WriteAllBytes(Path.Combine(icons_dir, "unlocked.png"), (byte[])converter.ConvertTo(Properties.Resources.unlocked, typeof(byte[])));
+                        }
+                    }
+                }
+                else
+                {
+                    Directory.CreateDirectory(icons_dir);
+                    var response = MessageBox.Show("Файлы иконок замочков не обнаруженны. Без них не будет иконки замочка в ангаре (она будет невидима).\r\nДобавить их?",
+                           "Файлы иконок не найдены", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                    if (response == DialogResult.OK)
+                    {
+                        ImageConverter converter = new ImageConverter();
+                        File.WriteAllBytes(Path.Combine(icons_dir, "locked.png"), (byte[])converter.ConvertTo(Properties.Resources.locked, typeof(byte[])));
+                        File.WriteAllBytes(Path.Combine(icons_dir, "unlocked.png"), (byte[])converter.ConvertTo(Properties.Resources.unlocked, typeof(byte[])));
+                    }
+                }
             }
         }
 
