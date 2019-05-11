@@ -1,6 +1,6 @@
 theme: jekyll-theme-slate
 title: "XVM EnableGoldFreeXPLocker"
-description: "тилита для включения/отключения замочков опыта, золота, бонов в World of Tanks."
-show_downloads: false
+description: "Утилита для включения/отключения замочков опыта, золота, бонов в World of Tanks."
+show_downloads: true
 github:
   zip_url: https://github.com/UndeXProject/XVM_EnableGoldFreeXPLocker/releases/download/v1.0.0.0/XVM_EnableGoldFreeXPLocker.zip
