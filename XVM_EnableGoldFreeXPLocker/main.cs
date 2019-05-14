@@ -39,6 +39,21 @@ namespace XVM_EnableGoldFreeXPLocker
                     }
                     setData();
                 }
+                else if (File.Exists(Path.Combine(path, @"res_mods\configs\xvm\xvm.xc.simple"))) {
+                    textBoxPath.Text = path;
+                    groupBox2.Enabled = true;
+                    var res = File.ReadAllLines(Path.Combine(path, @"res_mods\configs\xvm\xvm.xc.simple"));
+                    Regex regex = new Regex("\"(.*)/@xvm.xc");
+                    foreach (string line in res)
+                    {
+                        Match match = regex.Match(line);
+                        if (match.Groups[1].Length > 0)
+                        {
+                            pathHangar = Path.Combine(path, @"res_mods\configs\xvm\" + match.Groups[1].Value + @"\hangar.xc");
+                        }
+                    }
+                    setData();
+                }
                 else
                 {
                     MessageBox.Show("В автоматически обнаруженной игре не установлен XVM или файл xvm.xc отсутствует!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
