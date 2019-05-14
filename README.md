@@ -1,4 +1,5 @@
 # XVM EnableGoldFreeXPLocker
+[![Build Status](https://travis-ci.org/UndeXProject/XVM_EnableGoldFreeXPLocker.svg?branch=master)](https://travis-ci.org/UndeXProject/XVM_EnableGoldFreeXPLocker)
 ### Описание
 
 > Утилита для включения/отключения замочков опыта, золота, бонов в World of Tanks.
