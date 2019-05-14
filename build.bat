@@ -1,0 +1,1 @@
+cmd.exe /C MSBuild.exe XVM_EnableGoldFreeXPLocker/XVM_EnableGoldFreeXPLocker.sln /m:2 /nologo /verbosity:minimal /p:Configuration=Release /p:Platform="Any CPU"
