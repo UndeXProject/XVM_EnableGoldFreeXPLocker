@@ -153,11 +153,11 @@
             // 
             this.copy.AutoSize = true;
             this.copy.BackColor = System.Drawing.SystemColors.Control;
-            this.copy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.copy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.copy.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.copy.Location = new System.Drawing.Point(9, 151);
             this.copy.Name = "copy";
-            this.copy.Size = new System.Drawing.Size(105, 15);
+            this.copy.Size = new System.Drawing.Size(92, 13);
             this.copy.TabIndex = 2;
             this.copy.Text = "Label of Copyright";
             // 
