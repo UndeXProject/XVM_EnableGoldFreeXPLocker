@@ -39,10 +39,10 @@ namespace XVM_EnableGoldFreeXPLocker
                     }
                     setData();
                 }
-                else if (File.Exists(Path.Combine(path, @"res_mods\configs\xvm\xvm.xc.simple"))) {
+                else if (File.Exists(Path.Combine(path, @"res_mods\configs\xvm\xvm.xc.sample"))) {
                     textBoxPath.Text = path;
                     groupBox2.Enabled = true;
-                    var res = File.ReadAllLines(Path.Combine(path, @"res_mods\configs\xvm\xvm.xc.simple"));
+                    var res = File.ReadAllLines(Path.Combine(path, @"res_mods\configs\xvm\xvm.xc.sample"));
                     Regex regex = new Regex("\"(.*)/@xvm.xc");
                     foreach (string line in res)
                     {
