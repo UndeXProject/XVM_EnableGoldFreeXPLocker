@@ -1,9 +1,7 @@
 language: csharp
-mono:
-  - latest
-  - 3.12.0
-  - 3.10.0
+os: windows
+env:
+  - MSBUILD_PATH="c:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin"
 script:
-  - xbuild /p:TargetFrameworkVersion="v4.0" ./XVM_EnableGoldFreeXPLocker/XVM_EnableGoldFreeXPLocker.sln
-  - msbuild /p:Configuration=Release ./XVM_EnableGoldFreeXPLocker/XVM_EnableGoldFreeXPLocker.sln
-  - mono ./XVM_EnableGoldFreeXPLocker/XVM_EnableGoldFreeXPLocker/bin/Release/XVM_EnableGoldFreeXPLocker.exe
+  - export PATH=$MSBUILD_PATH:$PATH
+  - ./XVM_EnableGoldFreeXPLocker/build.bat
